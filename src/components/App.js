@@ -14,4 +14,14 @@ function App() {
   );
 }
 
+function movieCard(props) {
+  return (
+    <div className="movie-card">
+      <img src={props.posterSrc} alt={props.title}></img>
+      <h2>{props.title}</h2>
+      <small>{props.genres.join(", ")}</small>
+    </div>
+  );
+}
+
 export default App;
